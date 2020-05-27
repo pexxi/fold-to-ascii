@@ -1,5 +1,7 @@
 # fold-to-ascii-ts
 
+[![Build Status](https://travis-ci.com/pexxi/fold-to-ascii-ts.svg?branch=master)](https://travis-ci.com/pexxi/fold-to-ascii-ts)
+
 A JavaScript port of the Apache Lucene ASCII Folding Filter that converts alphabetic, numeric, and symbolic Unicode characters which are not in the first 127 ASCII characters (the "Basic Latin" Unicode block) into their ASCII equivalents.
 
 # Documentation
