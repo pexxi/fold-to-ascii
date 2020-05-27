@@ -1,4 +1,4 @@
-# fold-to-ascii-js
+# fold-to-ascii-ts
 
 A JavaScript port of the Apache Lucene ASCII Folding Filter that converts alphabetic, numeric, and symbolic Unicode characters which are not in the first 127 ASCII characters (the "Basic Latin" Unicode block) into their ASCII equivalents.
 
@@ -7,10 +7,10 @@ A JavaScript port of the Apache Lucene ASCII Folding Filter that converts alphab
 ## Installation
 
 Using npm:
-`npm install fold-to-ascii`
+`npm install @pexxi/fold-to-ascii-ts`
 
 Using yarn:
-`yarn add fold-to-ascii`
+`yarn add @pexxi/fold-to-ascii-ts`
 
 ## Usage
 
