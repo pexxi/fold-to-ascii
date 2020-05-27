@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "tslint-language-service"
+      }
+    ],
+    "module": "commonjs",
+    "declaration": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outDir": "dist",
+    "alwaysStrict": true,
+    "sourceMap": true,
+    "target": "es6",
+    "lib": ["esnext"]
+  },
+  "include": ["src/**/*", "test/**/*", "test"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

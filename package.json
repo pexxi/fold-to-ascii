@@ -1,14 +1,19 @@
 {
-  "name": "fold-to-ascii",
+  "name": "@pexxi/fold-to-ascii-ts",
   "version": "5.0.0",
   "description": "A JavaScript port of the Apache Lucene ASCII Folding Filter that converts alphabetic, numeric, and symbolic Unicode characters which are not in the first 127 ASCII characters (the \"Basic Latin\" Unicode block) into a ASCII equivalents, if they exist.",
-  "main": "lib/ascii-folder.js",
+  "main": "dist/ascii-folder.js",
   "scripts": {
-    "test": "qunit"
+    "build": "yarn clean && yarn compile",
+    "compile": "tsc -p tsconfig.build.json",
+    "clean": "rimraf dist",
+    "test": "jest",
+    "prepare": "yarn build",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mplatt/fold-to-ascii"
+    "url": "https://github.com/pexxi/fold-to-ascii-ts"
   },
   "keywords": [
     "ascii",
@@ -18,14 +23,24 @@
     "folding",
     "ligatures"
   ],
-  "author": "Moritz Platt <moritz.platt@googlemail.com>",
+  "author": "Pekka Kokkonen <hello@pexxi.dev>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/mplatt/fold-to-ascii/issues"
+    "url": "https://github.com/pexxi/fold-to-ascii-ts/issues"
   },
-  "homepage": "https://github.com/mplatt/fold-to-ascii",
+  "homepage": "https://github.com/pexxi/fold-to-ascii-ts",
   "devDependencies": {
-    "qunit": "2.9.2"
+    "@types/jest": "^25.2.2",
+    "auto-changelog": "^2.0.0",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "lint-staged": "^10.2.2",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.0.0",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.2"
   },
   "engines": {
     "node": ">= 6.3.1"
