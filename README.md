@@ -7,7 +7,7 @@ A JavaScript port of the Apache Lucene ASCII Folding Filter that converts alphab
 ## Installation
 
 Using npm:
-`npm install @pexxi/fold-to-ascii-ts`
+`npm install --save @pexxi/fold-to-ascii-ts`
 
 Using yarn:
 `yarn add @pexxi/fold-to-ascii-ts`
